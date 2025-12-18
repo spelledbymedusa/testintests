@@ -131,19 +131,21 @@ body {
   align-items: center;
   justify-content: center;
   z-index: 10;
-  transition: background-color 0.2s ease;
+  transition: background-color 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
 }
 
 .carousel-arrow:hover {
   background-color: rgba(56, 102, 65, 0.9);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
 }
 
 .carousel-arrow.left {
-  left: 8px;
+  left: -18px;
 }
 
 .carousel-arrow.right {
-  right: 8px;
+  right: -18px;
 }
 
 
