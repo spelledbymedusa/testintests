@@ -192,7 +192,12 @@ body {
   display: block;
   filter: brightness(0.85); /* slightly darker */
   object-fit: cover;
+  transition: transform 0.5s ease, filter 0.5s ease;
 }
+
+.welcome-image:hover img {
+  transform: scale(1.05);
+  filter: brightness(0.9);
 
 /* Shadow gradient at bottom */
 .welcome-image::after {
