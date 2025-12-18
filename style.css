@@ -162,18 +162,4 @@ body {
 
 
 
-/* small screen*/
-@media (max-width: 600px) {
-  .logo {
-    height: 30px; /* smaller logo */
-  }
 
-  .site-title {
-    font-size: 1.2rem; /* smaller text */
-  }
-
-  .site-header {
-    height: 60px; /* optional: slightly smaller header */
-    padding: 0 16px; /* reduce side padding a bit */
-  }
-}
