@@ -79,7 +79,7 @@ body {
 .image-card {
   position: relative;
   flex: 0 0 auto; /* prevent shrinking */
-  width: calc(20% - 10px); /* Größe anpassen hiieeeeeer <---------------------------------------- */
+  width: 220px; /* Größe anpassen hiieeeeeer <---------------------------------------- */
   min-width: 180px; /* Mindestgröße auf schmalen screens testen, potential issue here*/
   border-radius: 12px;
   overflow: hidden;
