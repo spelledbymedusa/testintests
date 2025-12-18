@@ -24,6 +24,31 @@ body {
   font-size: 1.6rem;
 }
 
+.nav-buttons {
+  margin-left: auto; /* push to the right */
+  display: flex;
+  gap: 16px;
+}
+
+.nav-btn {
+  text-decoration: none;
+  color: #f2e8cf;
+  padding: 6px 12px;
+  border: 2px solid transparent;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+  font-weight: 500;
+}
+
+.nav-btn:not(.account-btn):hover {
+  border-color: #f2e8cf;
+  background-color: rgba(242, 232, 207, 0.1); /* subtle highlight */
+}
+
+.account-btn {
+  border-color: #f2e8cf;
+}
+
 /* small screen*/
 @media (max-width: 600px) {
   .logo {
