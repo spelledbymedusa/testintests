@@ -72,7 +72,7 @@ body {
   overflow-x: auto; /* allows horizontal swipe/scroll */
   gap: 12px;
   padding: 8px 24px;
-  background-color: #386641 /* hunter green */
+  background-color: #386641; /* hunter green */
   scroll-behavior: smooth;
 }
 
