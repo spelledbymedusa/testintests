@@ -1,12 +1,12 @@
 /* standart*/
 body {
   margin: 0;
-  background-color: #f2e8cf;
+  background-color: #f2e8cf; /* vanilla */
   font-family: system-ui, sans-serif;
 }
 
 .site-header {
-  background-color: #386641;
+  background-color: #386641; /* hunter green */
   height: 80px;
   display: flex;
   align-items: center;
@@ -20,7 +20,7 @@ body {
 }
 
 .site-title {
-  color: #f2e8cf;
+  color: #f2e8cf; /* vanilla */
   font-size: 1.6rem;
 }
 
@@ -32,7 +32,7 @@ body {
 
 .nav-btn {
   text-decoration: none;
-  color: #f2e8cf;
+  color: #f2e8cf; /* vanilla */
   padding: 6px 12px;
   border: 2px solid transparent;
   border-radius: 6px;
@@ -58,26 +58,29 @@ body {
   padding: 4px 8px;
   border-radius: 6px;
   font-size: 0.9rem;
-  opacity: 0;          /* hidden by default */
+  opacity: 0;          /* title hidden by default */
   transition: opacity 0.3s ease;
 }
 
 .image-card:hover .image-title {
-  opacity: 1;          /* fade in on hover */
+  opacity: 1;          /* title fade in on hover */
 }
 
 /* IMAGE BAR */
 .image-bar {
   display: flex;
   overflow-x: auto; /* allows horizontal swipe/scroll */
-  gap: 16px;
-  padding: 16px 24px;
+  gap: 12px;
+  padding: 8px 24px;
+  background-color: #386641 /* hunter green */
+  scroll-behavior: smooth;
 }
 
 .image-card {
   position: relative;
   flex: 0 0 auto; /* prevent shrinking */
-  width: 200px;
+  width: calc(20% - 10px); /* Größe anpassen hiieeeeeer <---------------------------------------- */
+  min-width: 180px; /* Mindestgröße auf schmalen screens testen, potential issue here*/
   border-radius: 12px;
   overflow: hidden;
   cursor: pointer;
@@ -86,7 +89,7 @@ body {
 
 .image-card img {
   width: 100%;
-  height: 140px;
+  height: 160px; /* Größe anpassen hieeeer Part 2 <------------------------------------ */
   object-fit: cover;
   display: block;
 }
@@ -111,6 +114,16 @@ body {
 .image-card:hover {
   transform: scale(1.05); /* subtle zoom */
 }
+
+
+
+
+
+
+
+
+
+
 
 
 /* small screen*/
