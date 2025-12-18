@@ -69,6 +69,7 @@ body {
 /* IMAGE BAR */
 .image-bar {
   display: flex;
+  align-items; center;
   overflow-x: auto; /* allows horizontal swipe/scroll */
   gap: 12px;
   padding: 8px 24px;
@@ -116,8 +117,7 @@ body {
 }
 
 .carousel-container {
-  position: relative; 
-  padding: 8px 0; 
+  position: relative;  
 }
 
 .carousel-arrow {
