@@ -115,6 +115,11 @@ body {
   transform: scale(1.05); /* subtle zoom */
 }
 
+.carousel-container {
+  position: relative; 
+  padding: 8px 0; 
+}
+
 .carousel-arrow {
   position: absolute;
   top: 50%;
@@ -141,11 +146,11 @@ body {
 }
 
 .carousel-arrow.left {
-  left: -18px;
+  left: -12px;
 }
 
 .carousel-arrow.right {
-  right: -18px;
+  right: -12px;
 }
 
 
