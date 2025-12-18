@@ -49,6 +49,25 @@ body {
   border-color: #f2e8cf;
 }
 
+.image-card .image-title {
+  position: absolute;
+  bottom: 8px;
+  left: 8px;
+  color: #f2e8cf; /* vanilla */
+  background-color: rgba(56, 102, 65, 0.7); /* hunter green with transparency */
+  padding: 4px 8px;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  opacity: 0;          /* hidden by default */
+  transition: opacity 0.3s ease;
+}
+
+.image-card:hover .image-title {
+  opacity: 1;          /* fade in on hover */
+}
+
+
+
 /* small screen*/
 @media (max-width: 600px) {
   .logo {
