@@ -28,3 +28,16 @@ imageFiles.forEach(file => {
   imageBar.appendChild(link);
 });
 
+// ARROW NAVIGATION
+const arrowLeft = document.getElementById("arrowLeft");
+const arrowRight = document.getElementById("arrowRight");
+
+const scrollAmount = 240; // how much to scroll per click (pixels)
+
+arrowLeft.addEventListener("click", () => {
+  imageBar.scrollBy({ left: -scrollAmount, behavior: "smooth" });
+});
+
+arrowRight.addEventListener("click", () => {
+  imageBar.scrollBy({ left: scrollAmount, behavior: "smooth" });
+});
