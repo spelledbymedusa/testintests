@@ -5,11 +5,11 @@
   const imageFiles = [
     "Altenhilfe.png",
     "Naturschutz.png",
-    "Tierheim.png",
-    "Kinderbetreuung.png",
+    "Tierschutz.png",
+    "Kindersport.png",
     "Kultur.png",
-    "Gesundheit.png",
-    "Umweltschutz.png"
+    "Musik.png",
+    "Bildung.png"
     // Later add more filenames here
   ];
 
