@@ -88,7 +88,7 @@ body {
 /* IMAGE BAR */
 .image-bar {
   display: flex;
-  align-items; center;
+  align-items: center;
   overflow-x: auto; /* allows horizontal swipe/scroll */
   gap: 0;
   padding: 0;
@@ -172,6 +172,8 @@ body {
   right: -12px;
 }
 
+
+/* WELCOME SECTION*/
 .welcome-section {
   display: flex;
   align-items: center;
@@ -217,7 +219,7 @@ body {
 .welcome-image:hover img {
   transform: scale(1.05);
   filter: brightness(0.9);
-
+}
 /* Shadow gradient at bottom */
 .welcome-image::after {
   content: "";
@@ -230,7 +232,70 @@ body {
   pointer-events: none;
 }
 
+/* INTENTION SECTION */
 
+.intention-section {
+  padding: 60px 24px;
+  background-color: #f2e8cf; /* vanilla */
+}
+
+.intention-title {
+  text-align: center;
+  font-size: 2rem;
+  color: #386641; /* hunter green */
+  margin-bottom: 40px;
+}
+
+.intention-cards {
+  display: flex;
+  gap: 24px;
+  max-width: 1100px;
+  margin: 0 auto;
+  align-items: stretch;
+}
+
+.intention-card {
+  flex: 1;
+  display: flex;
+  gap: 16px;
+  padding: 24px;
+  background-color: #f2e8cf; /* vanilla */
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+  align-items: flex-start;
+}
+
+.intention-card svg {
+  transition: transform 0.2s ease;
+}
+
+.intention-card:hover svg {
+  transform: scale(1.05);
+}
+
+.intention-icon {
+  flex-shrink: 0;
+  margin-top: 4px;
+  color: #386641; /* dark green */
+  
+}
+
+.intention-icon svg {
+  display: block;
+}
+
+.intention-text h3 {
+  margin: 0 0 8px;
+  color: #386641;
+  font-size: 1.2rem;
+}
+
+.intention-text p {
+  margin: 0;
+  color: #333;
+  line-height: 1.4;
+  font-size: 0.95rem;
+}
 
 
 
